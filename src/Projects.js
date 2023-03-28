@@ -84,7 +84,7 @@ export const ProjectList = () => {
                             <NavLink className="clickable" to=":{project.slug}">
                             <div className="content square">
                                 <div className="border">
-                                    <NavLink className="clickable" to=":{project.slug}"><h1 className="no-pad no-margin heading">{project.title}</h1></NavLink>
+                                    <h1 className="no-pad no-margin heading">{project.title}</h1>
                                     <h2 className="no-pad no-margin sub-heading">{project.date}</h2>
                                 </div>
                                 <div className="text">
@@ -92,7 +92,7 @@ export const ProjectList = () => {
                                 </div>
                             </div>
                             <div className="bottom">
-                                <button className="button"><NavLink className="red" to=":{slug}">Read More »</NavLink></button>
+                                <button className="button">Read More »</button>
                             </div>
                             </NavLink>
                         </div>
@@ -111,12 +111,14 @@ export const ProjectListPreview = () => {
             projectComponentList.map((project, index) => {
                 return (
                     <div className="project-grid-item grid-border block" key={index}>
+                    <NavLink className="clickable" to=":{project.slug}">
                         <div>
-                            <NavLink className="clickable" to=":{project.slug}"><h1 className="no-pad no-margin heading">{project.title}</h1></NavLink>
+                            <h1 className="no-pad no-margin heading">{project.title}</h1>
                             <h2 className="no-pad no-margin sub-heading">{project.date}</h2>
                         </div>
                         <p className="body excerpt">{textBodyShortener(project.excerpt, 25)}...</p>
-                        <button className="button center bottom"><NavLink className="red" to=":{slug}">Read More »</NavLink></button>
+                        <button className="button center bottom">Read More »</button>
+                    </NavLink>
                     </div>
                 )
             })

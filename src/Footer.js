@@ -5,63 +5,56 @@ export default function Footer() {
     return (
         <>
         {/* Footer */}
-        <footer id="footer" class="footer text-center ">
+        <footer id="footer" className="footer text-center ">
         {/* Grid container */}
 
-        <div class="container p-4">
+        <div className="container p-4">
             {/* Section: Social media */}
-            <section class="mb-4">
+            <section className="mb-4">
             {/* Facebook */}
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-facebook-f"></i
-            ></a>
+            <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i className="fab fa-facebook-f"></i></a>
 
             {/* Twitter */}
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-twitter"></i
-            ></a>
+            <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i className="fab fa-twitter"></i></a>
 
             {/* Google */}
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-google"></i
-            ></a>
+            <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i className="fab fa-google"></i></a>
 
             {/* Instagram */}
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-instagram"></i
-            ></a>
+            <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i className="fab fa-instagram"></i></a>
 
             {/* Linkedin */}
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i class="fab fa-linkedin-in"></i
-            ></a>
+            <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i className="fab fa-linkedin-in"></i></a>
 
             {/* Github */}
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                ><i className="fab fa-github"></i
-            ></a>
+            <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i className="fab fa-github"></i></a>
             </section>
             {/* Section: Social media */}
 
             {/* Section: Form */}
-            <section class="">
-            <form action="">
+            <section className="">
+            <div>
                 {/*Grid row*/}
-                <div class="row d-flex justify-content-center">
+                <div className="row d-flex justify-content-center">
                 {/*Grid column*/}
-                <div class="col-auto">
-                    <p class="pt-2">
+                <div className="col-auto">
+                    <p className="pt-2">
                     <strong>Get in touch</strong>
                     </p>
                 </div>
                 {/*Grid column*/}
                 </div>
-                <div class="row d-flex justify-content-center">
+                <div className="row d-flex justify-content-center">
                 {/*Grid column*/}
-                <div class="col-auto">
+                <div className="col-auto">
                     {/* Email input */}
                     <ContactUsFooter />
-                    
                 </div>
                 </div>
                 {/*Grid column*/}
@@ -69,12 +62,12 @@ export default function Footer() {
                 {/*Grid column*/}
                 
                 {/*Grid row*/}
-            </form>
+            </div>
             </section>
             {/* Section: Form */}
 
             {/* Section: Text */}
-            <section class="mb-4">
+            <section className="mb-4">
             <p>
                 This site was made with ReactJs, and a combination of bootstrap and custom css.
             </p>
@@ -82,14 +75,14 @@ export default function Footer() {
             {/* Section: Text */}
 
             {/* Section: Links */}
-            <section class="">
+            <section className="">
             {/*Grid row*/}
-            <div class="row">
+            <div className="row">
                 {/*Grid column*/}
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">pages</h5>
+                <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 className="text-uppercase">pages</h5>
 
-                <ul class="list-unstyled mb-0">
+                <ul className="list-unstyled mb-0">
                     <li>
                     <NavLink to="/" className="link">Home</NavLink>
                     </li>
@@ -104,10 +97,10 @@ export default function Footer() {
                 {/*Grid column*/}
 
                 {/*Grid column*/}
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Projects</h5>
+                <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 className="text-uppercase">Projects</h5>
 
-                <ul class="list-unstyled mb-0">
+                <ul className="list-unstyled mb-0">
                     <li>
                     <a href="#!" className="link">Link 1</a>
                     </li>
@@ -125,10 +118,10 @@ export default function Footer() {
                 {/*Grid column*/}
 
                 {/*Grid column*/}
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Return</h5>
+                <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 className="text-uppercase">Return</h5>
 
-                <ul class="list-unstyled mb-0">
+                <ul className="list-unstyled mb-0">
                     <li>
                     <a className="link" href="#main-nav">
                         <div className="nav-button-wrapper">
@@ -158,7 +151,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div class="text-center p-3">
+        <div className="text-center p-3">
             <div className="content">
                 <h1 className="text-align-center text">© 2023 Copyright: Joe Weatherall</h1>
             </div>
