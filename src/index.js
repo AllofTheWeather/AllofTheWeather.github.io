@@ -9,37 +9,39 @@ import {
 
 import "./styles.css";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "./styles.css";
+
 import { App } from './App';
 import { Homepage } from './Homepage';
-import { Projects, ProjectList, ProjectPost } from './Projects';
+import { Projects, ProjectList } from './Projects';
+import ProjectPost from './ProjectPost';
 import { Skills } from './Skills';
-import { Contact } from './Contact';
-import { Experience } from './Experience';
+import ScrollToTop from "./ScrollToTop";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  
     <React.StrictMode>
+      <BrowserRouter>
+      <ScrollToTop />
       <Routes>
-        <Route path="/" element={<App />}>
-          <Route index element={<Homepage />} />
+        <Route element={<App />}>
+          <Route index path="/home" element={<Homepage />} />
 
-          <Route path="skills" element={<Skills />} />
+          <Route path="/skills" element={<Skills />} />
 
-          <Route path="projects" element={<Projects />}>
+          <Route path="/projects" element={<Projects />}>
             <Route index element={<ProjectList />} />
             <Route path=":slug" element={<ProjectPost />} />
           </Route>
-
-          <Route path="experience" element={<Experience />} />
-
-          <Route path="contact" element={<Contact />} />
           
         </Route>
       </Routes>
+      </BrowserRouter>
     </React.StrictMode>
-  </BrowserRouter>
 
 );
 

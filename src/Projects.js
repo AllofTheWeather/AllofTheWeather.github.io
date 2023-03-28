@@ -3,15 +3,28 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export const Projects = () => {
     return (
-        <section className="body-with-padding">
-            <Outlet />
-        </section>
+        <>
+            <div id="top" className="header-offset"></div>
+
+            <h1 className="heading small-margin">Portfolio</h1>
+
+            <section className="small-margin">
+                <Outlet />
+            </section>
+        </>
     )
 }
 
 const projectComponentList = [
     {
-        title: 'CCP Search Ontology Web App',
+        title: 'Colour by Night',
+        date: 'sep 22',
+        excerpt: 'An online flyer for an event at a local nightclub',
+        slug: 'CbN'
+
+    },
+    {
+        title: 'CCP Search Ontology',
         date: 'oct 22 - present',
         excerpt: 'I developed a full stack web app using the python flask framework. The client had developed a ml application which could be run on jupyter notebook. •	Firstly, I refactored the notebook cells into a python library to make the codebase more manageable. Secondly, I created a user interface with flask. Finally, I built a flask api to handle user requests, run the refactored backend code, and display it to the user.',
         slug: 'CCP'
@@ -62,36 +75,52 @@ const textBodyShortener = (text, noOfWords) => {
 
 export const ProjectList = () => {
     return (
-        <div>
-            <ul className="grid">
+            <ul className="grid no-pad">
                 {
                 projectComponentList.map((project, index) => {
                     return (
-                        <div className="border-bottom" key={index}>
-                            <div className="block-container">
-                                <NavLink className="heading clickable" to=":{slug}"><h1>{project.title}</h1></NavLink>
-                                <br />
-                                <h2 className="sub-heading">{project.date}</h2>
+                        
+                        <div className="project-grid-item grid-border block content" key={index}>
+                            <NavLink className="clickable" to=":{project.slug}">
+                            <div className="content square">
+                                <div className="border">
+                                    <NavLink className="clickable" to=":{project.slug}"><h1 className="no-pad no-margin heading">{project.title}</h1></NavLink>
+                                    <h2 className="no-pad no-margin sub-heading">{project.date}</h2>
+                                </div>
+                                <div className="text">
+                                    <p className="body excerpt">{textBodyShortener(project.excerpt, 25)}...</p>
+                                </div>
                             </div>
-                            <br />
-                            <p className="body excerpt">{textBodyShortener(project.excerpt, 25)}...</p>
-                            <br />
-                            <NavLink className="button" to=":{slug}">Read More »</NavLink>
-                            <br />
+                            <div className="bottom">
+                                <button className="button"><NavLink className="red" to=":{slug}">Read More »</NavLink></button>
+                            </div>
+                            </NavLink>
                         </div>
+                       
                     )
                 })
                 }
-
             </ul>
-        </div>
     )
 }
 
-export const ProjectPost = () => {
+export const ProjectListPreview = () => {
     return (
-        <div>
-            Project Post
-        </div>
-    )
+        <ul className="grid-overflow no-pad">
+            {
+            projectComponentList.map((project, index) => {
+                return (
+                    <div className="project-grid-item grid-border block" key={index}>
+                        <div>
+                            <NavLink className="clickable" to=":{project.slug}"><h1 className="no-pad no-margin heading">{project.title}</h1></NavLink>
+                            <h2 className="no-pad no-margin sub-heading">{project.date}</h2>
+                        </div>
+                        <p className="body excerpt">{textBodyShortener(project.excerpt, 25)}...</p>
+                        <button className="button center bottom"><NavLink className="red" to=":{slug}">Read More »</NavLink></button>
+                    </div>
+                )
+            })
+            }
+        </ul>
+)
 }
