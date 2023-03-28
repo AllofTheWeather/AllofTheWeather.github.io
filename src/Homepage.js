@@ -1,51 +1,41 @@
+import { NavLink } from "react-router-dom"
+import { ProjectList } from "./Projects"
+
 export const Homepage = () => {
     return (
         <>
-            <h2>
-            Hello!
-            </h2>
-            <h3>I’m a driven self-taught developer with a knack for consistently grasping new concepts, and a thirst for knowledge.</h3>
 
-            <h3>
-                As a problem solver. I particularly enjoy the iterative breakdown of a seemingly impossible task into its more manageable constituent parts. The essence of programmatic thinking, I find also applicable to other areas of my life.
-            </h3>
-
-            <a className="center" href="/skills">
-                <button className="button">Find out what I can do</button>
-            </a>
-
-
-
-            <a href="/experience">
-                <h2>Experience</h2>
-                <h3>
-                    I have developed excellent communication skills that allow me to become an asset in any team. I can be welcoming, friendly, increase moral and, resolve conflict in a polite and professional manner.
-                </h3>
-                <div className="center">
-                    <button className="button">See my CV</button>
-                </div>
-            </a>
-
-            <br />
+        <div className="header-offset">
             
-            <a href="/portfolio">
-                <h2>Projects</h2>
-                <h3>
-                    I’ve worked on several exciting projects that have challenged me to further my understanding, including flask deployment of a machine learning program, single page and multi-page static sites.
-                </h3>
-                <div className="center">
-                  <button className="button">See my portfolio</button>  
-                </div>
-                
-            </a>
+        </div>
 
-            <a href="/contact">
-                <h2>Contact me</h2>
-                <h3>If you're interested in getting in touch, send me an email</h3>
-                <div className="center">
-                    <button className="button">Send me a message</button>
-                </div>
-            </a>
+            <section className="text-section">
+                <h2 className="large-block sub-title text-align-center">
+                Hello!
+                </h2>
+                <p className="sub-heading text-align-center">I’m a driven self-taught developer with a knack for consistently grasping new concepts, and a thirst for knowledge.</p>
+
+            </section>
+
+            <section className="slide-show large-block">
+                <section className="text-section">
+                    <h2 className="heading">Projects</h2>
+                </section>
+                    <ProjectList />
+            </section>
+
+
+            <section className="text-section">
+                <a href="/experience">
+                    <h2 className="heading">Experience</h2>
+                    <h3 className="text">
+                        I have developed excellent communication skills that allow me to become an asset in any team. I can be welcoming, friendly, increase moral and, resolve conflict in a polite and professional manner.
+                    </h3>
+                    <div className="content">
+                        <button className="button center">See my CV</button>
+                    </div>
+                </a>
+            </section>
 
             <br />
         </>
