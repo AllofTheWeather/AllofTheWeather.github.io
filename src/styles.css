@@ -326,7 +326,7 @@ header {
 }
 
 .header-offset {
-    height: 80px;
+    height: 0px;
     margin: 0;
     padding: 0;
 }
@@ -646,3 +646,6 @@ footer {
     overflow: hidden;
 }
 
+.border {
+    border: 2px solid var(--ink);
+}

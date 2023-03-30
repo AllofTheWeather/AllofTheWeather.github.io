@@ -9,7 +9,7 @@ const Nav = () => {
     return (
 <nav className="flex-row space-between align-center" id="main-nav">
     <div className="nav-left">
-        <NavLink className="link" to="/home">
+        <NavLink className="link" to="/">
             <div className="nav-button-wrapper">
             <button className="button nav-button flex-center">
                 <svg className="flex-center nav-symbol" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">

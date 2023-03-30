@@ -29,7 +29,7 @@ root.render(
       <ScrollToTop />
       <Routes>
         <Route element={<App />}>
-          <Route index path="/home" element={<Homepage />} />
+          <Route index path="/" element={<Homepage />} />
 
           <Route path="/skills" element={<Skills />} />
 
