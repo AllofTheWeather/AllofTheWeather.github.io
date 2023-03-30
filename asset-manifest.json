@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.ebf694d3.css",
-    "main.js": "/static/js/main.65f64426.js",
-    "static/js/787.72fc65e2.chunk.js": "/static/js/787.72fc65e2.chunk.js",
-    "static/media/Colour by Night Homepage.png": "/static/media/Colour by Night Homepage.ff7be34651ba623095ea.png",
-    "static/media/cbn4.png": "/static/media/cbn4.7b33190eaad28eec7d67.png",
-    "static/media/cbn3.png": "/static/media/cbn3.31d66f5b3e1542d07c59.png",
-    "static/media/cbn2.png": "/static/media/cbn2.5268ba8950dcd2a38089.png",
-    "static/media/cbn-hooks.png": "/static/media/cbn-hooks.9d7bb113667dec32839b.png",
-    "index.html": "/index.html",
-    "main.ebf694d3.css.map": "/static/css/main.ebf694d3.css.map",
-    "main.65f64426.js.map": "/static/js/main.65f64426.js.map",
-    "787.72fc65e2.chunk.js.map": "/static/js/787.72fc65e2.chunk.js.map"
+    "main.css": "/home/static/css/main.ebf694d3.css",
+    "main.js": "/home/static/js/main.f156ad70.js",
+    "static/js/787.72fc65e2.chunk.js": "/home/static/js/787.72fc65e2.chunk.js",
+    "static/media/Colour by Night Homepage.png": "/home/static/media/Colour by Night Homepage.ff7be34651ba623095ea.png",
+    "static/media/cbn4.png": "/home/static/media/cbn4.7b33190eaad28eec7d67.png",
+    "static/media/cbn3.png": "/home/static/media/cbn3.31d66f5b3e1542d07c59.png",
+    "static/media/cbn2.png": "/home/static/media/cbn2.5268ba8950dcd2a38089.png",
+    "static/media/cbn-hooks.png": "/home/static/media/cbn-hooks.9d7bb113667dec32839b.png",
+    "index.html": "/home/index.html",
+    "main.ebf694d3.css.map": "/home/static/css/main.ebf694d3.css.map",
+    "main.f156ad70.js.map": "/home/static/js/main.f156ad70.js.map",
+    "787.72fc65e2.chunk.js.map": "/home/static/js/787.72fc65e2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebf694d3.css",
-    "static/js/main.65f64426.js"
+    "static/js/main.f156ad70.js"
   ]
 }
