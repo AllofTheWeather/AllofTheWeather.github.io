@@ -12,7 +12,7 @@ export const Skills = () => {
                 </div>
 
         <div className="small-margin">
-            < Experience />
+            <Experience />
             <CV />
         </div>
         <div className="large-block" />

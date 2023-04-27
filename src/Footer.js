@@ -80,7 +80,7 @@ export default function Footer() {
             {/*Grid row*/}
             <div className="row">
                 {/*Grid column*/}
-                <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div className="col-md-6 mb-4 mb-md-0">
                 <h5 className="text-uppercase">pages</h5>
 
                 <ul className="list-unstyled mb-0">
@@ -98,7 +98,7 @@ export default function Footer() {
                 {/*Grid column*/}
 
                 {/*Grid column*/}
-                <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div className="col-md-6 mb-4 mb-md-0">
                 <h5 className="text-uppercase">Projects</h5>
 
                 <ul className="list-unstyled mb-0">

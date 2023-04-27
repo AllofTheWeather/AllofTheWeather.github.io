@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { ProjectList } from "./Projects"
+import ProjectGallery from "./ProjectGallery"
 
 export const Homepage = () => {
     return (
@@ -13,7 +13,7 @@ export const Homepage = () => {
                 <h2 className="large-block sub-title text-align-center">
                 Hello!
                 </h2>
-                <p className="sub-heading text-align-center">I’m a driven self-taught developer with a knack for consistently grasping new concepts, and a thirst for knowledge.</p>
+                <p className="sub-heading text-align-center">I’m a driven self-taught developer with a knack for consistently grasping new concepts, and a desire to learn.</p>
 
             </section>
 
@@ -21,7 +21,9 @@ export const Homepage = () => {
                 <section className="text-section">
                     <h2 className="heading">Projects</h2>
                 </section>
-                    <ProjectList />
+
+                <ProjectGallery />
+
             </section>
 
 

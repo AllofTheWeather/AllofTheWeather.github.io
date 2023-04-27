@@ -33,10 +33,7 @@ root.render(
 
           <Route path="/skills" element={<Skills />} />
 
-          <Route path="/projects" element={<Projects />}>
-            <Route index element={<ProjectList />} />
-            <Route path=":slug" element={<ProjectPost />} />
-          </Route>
+          <Route path="/projects" element={<Projects />} />
           
         </Route>
       </Routes>
